@@ -1,4 +1,4 @@
-# The Fitness Community Forum System
+# The Fitness Community - Forum System
 
 Sport Forum is a platform for adding articles by different people for many sports.
 There are many functionalities, such as:
