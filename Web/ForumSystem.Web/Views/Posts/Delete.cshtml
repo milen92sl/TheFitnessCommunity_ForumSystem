@@ -1,0 +1,29 @@
+﻿@model ForumSystem.Web.ViewModels.Posts.PostDeleteModel
+
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<div>
+    <h4>
+        Аre you sure you want to delete the article?
+    </h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>      
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="All">Back</a>
+    </form>
+</div>
+
