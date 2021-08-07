@@ -121,7 +121,6 @@
             {
                 var urlOfProducts = await this.postsService.UploadAsync(this.cloudinary, files);
                 await this.postsService.AddImageInBase(urlOfProducts, postId);
-
             }
 
             return this.RedirectToAction(nameof(this.ById), new { id = postId });
