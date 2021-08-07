@@ -9,11 +9,6 @@ There are many functionalities, such as:
 * Search engine
 * Pageing
 
-## External software used
-* TinyMCE- text editor
-* Cloudinary- cloud-based image
-
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
