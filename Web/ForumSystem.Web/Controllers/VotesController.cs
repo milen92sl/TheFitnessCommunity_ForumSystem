@@ -1,13 +1,14 @@
-﻿using ForumSystem.Data.Models;
-using ForumSystem.Services.Data;
-using ForumSystem.Web.ViewModels.Votes;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Web.Controllers
+﻿namespace ForumSystem.Web.Controllers
 {
+    using System.Threading.Tasks;
+
+    using ForumSystem.Data.Models;
+    using ForumSystem.Services.Data;
+    using ForumSystem.Web.ViewModels.Votes;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+
     [ApiController]
     [Route("api/[controller]")]
     public class VotesController : ControllerBase

@@ -20,7 +20,7 @@ There are many functionalities, such as:
 # Images
 
 ## Home page
-<img src="" width="1000">
+<img src="https://www.issaonline.com/blog/img/posts/627/issa-building-fitness-community.jpg" width="1000">
 
 ## Create article
 <img src="" width="1000">
