@@ -12,7 +12,7 @@ There are many functionalities, such as:
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-# Images
+# Images :
 
 ## Home page
 <img src="https://www.issaonline.com/blog/img/posts/627/issa-building-fitness-community.jpg" width="1000">
