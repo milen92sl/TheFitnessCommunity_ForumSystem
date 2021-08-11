@@ -1,28 +1,27 @@
 ﻿@using ForumSystem.Common
 @model ForumSystem.Web.ViewModels.Home.IndexViewModel
-@{
-    this.ViewData["Title"] = $"TheFitnessCommunity";
-}
+@{ this.ViewData["Title"] = $"TheFitnessCommunity"; }
 
 <div class="slideshow-container">
 
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src= "https://www.issaonline.com/blog/img/posts/627/issa-building-fitness-community.jpg" style="width:100%">
+    <div class="mySlides fade">      
+        <img src="https://www.issaonline.com/blog/img/posts/627/issa-building-fitness-community.jpg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="https://formagym.com/wp-content/uploads/2019/03/shutterstock_1065905168-1.jpg" style="width:100%">
+        <img src="https://assets.website-files.com/581c85345d7e0501760aa7db/5b17ab5cc6215ef0331908fd_Creative%20Ways%20to%20Build%20Community%20at%20Your%20Gym.jpg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
         <img src="https://www.glofox.com/wp-content/uploads/2019/03/fitness20community-2.png" style="width:100%">
     </div>
 
+    <div class="mySlides fade">
+        <img src="https://wellspring.edu/wp-content/uploads/2020/09/fitness-nutrition-hero-opt.jpg" style="width:100%">
+    </div>
+
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="next" onclick="plusSlides(+1)">&#10095;</a>
 
 </div>
 <br>
@@ -31,6 +30,7 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
 
@@ -43,14 +43,13 @@
 <div class="row" style="text-align:center">
     @foreach (var category in Model.Categories)
     {
-        <div class="col-md-4">
-            <img src="@category.ImageUrl" width="100" class="mr-3" alt="@category.Title">
-            <div class="media-body">
-                <h5 class="mt-0"><a href="@category.Url">@category.Title (@category.PostsCount)</a></h5>
-                @category.Description
-            </div>
-        </div>
-    }
+<div class="col-md-4">
+    <img src="@category.ImageUrl" width="140" class="mr-3" alt="@category.Title">
+    <div class="media-body">
+        <h5 class="mt-0"><a href="@category.Url">@category.Title (@category.PostsCount)</a></h5>
+        @category.Description
+    </div>
+</div>}
 </div>
 
 <script>
