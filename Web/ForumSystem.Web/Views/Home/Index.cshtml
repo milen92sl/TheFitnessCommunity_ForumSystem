@@ -81,6 +81,8 @@
     }
 </script>
 
+@if (User.Identity.IsAuthenticated)
+{
 <div class="mb-5"></div>
 
 <div class="row">
@@ -112,4 +114,5 @@
             });
         });
     </script>
+ }
 }

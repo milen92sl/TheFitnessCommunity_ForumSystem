@@ -8,6 +8,13 @@
   <PropertyGroup>
     <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Routing\**" />
+    <Content Remove="Routing\**" />
+    <EmbeddedResource Remove="Routing\**" />
+    <None Remove="Routing\**" />
+  </ItemGroup>
   <ItemGroup>
     <AdditionalFiles Include="..\..\stylecop.json" />
   </ItemGroup>
@@ -34,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Routing\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
