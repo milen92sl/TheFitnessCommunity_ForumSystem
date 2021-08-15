@@ -11,7 +11,7 @@ namespace ForumSystem.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20200516205913_changeImageModel")]
-    partial class changeImageModel
+    partial class ChangeImageModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

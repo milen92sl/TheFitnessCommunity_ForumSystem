@@ -16,11 +16,11 @@
 
     public class PostsController : Controller
     {
+        private const int ItemsPerPage = 5;
         private readonly IPostsService postsService;
         private readonly ICategoriesService categoriesService;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly Cloudinary cloudinary;
-        private const int ItemsPerPage = 5;
 
         public PostsController(
             IPostsService postsService,

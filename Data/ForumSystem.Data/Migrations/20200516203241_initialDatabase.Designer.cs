@@ -11,7 +11,7 @@ namespace ForumSystem.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20200516203241_initialDatabase")]
-    partial class initialDatabase
+    partial class InitialDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

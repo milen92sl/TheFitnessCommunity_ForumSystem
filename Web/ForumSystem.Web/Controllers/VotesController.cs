@@ -27,6 +27,7 @@
         // POST /api/votes
         // Request body: {"postId":1,"isUpVote":true}
         // Response body: {"votesCount":16}
+
         [Authorize]
         [HttpPost]
         public async Task<ActionResult<VoteResponseModel>> Post(VoteInputModel input)

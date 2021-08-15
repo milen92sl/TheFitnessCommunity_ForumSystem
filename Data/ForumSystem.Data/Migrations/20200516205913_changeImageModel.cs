@@ -1,17 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace ForumSystem.Data.Migrations
+﻿namespace ForumSystem.Data.Migrations
 {
-    public partial class changeImageModel : Migration
+    using Microsoft.EntityFrameworkCore.Migrations;
+
+    public partial class ChangeImageModel : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
         }
     }
 }

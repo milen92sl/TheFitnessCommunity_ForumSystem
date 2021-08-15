@@ -4,7 +4,7 @@
 
 <div class="slideshow-container">
 
-    <div class="mySlides fade">      
+    <div class="mySlides fade">
         <img src="https://www.issaonline.com/blog/img/posts/627/issa-building-fitness-community.jpg" style="width:100%">
     </div>
 
@@ -80,3 +80,36 @@
         dots[slideIndex - 1].className += " active";
     }
 </script>
+
+<div class="mb-5"></div>
+
+<div class="row">
+    <div class="col-12 text-center">
+        <button class="btn btn-primary" id="statistics-button">Show Statistics</button>
+    </div>
+</div>
+
+<div class="jumbotron d-none" id="statistics">
+    <div class="row col-12">
+        <h1 class="col-12 text-center" id="total-users"></h1>
+        <h1 class="col-12 text-center" id="total-posts"></h1>
+        <h1 class="col-12 text-center" id="total-votes"></h1>
+        <h1 class="col-12 text-center" id="total-comments"></h1>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $('#statistics-button').on('click', ev => {
+            $.get('/api/statistics', (data) => {
+                $('#total-users').text("Total Users: " + data.totalUsers);
+                $('#total-posts').text("Total Posts: " + data.totalPosts);
+                $('#total-votes').text(" Total Votes: " + data.totalVotes);
+                $('#total-comments').text("Total Comments: " + data.totalComments);
+
+                $('#statistics').removeClass('d-none');
+                $('#statistics-button').hide();
+            });
+        });
+    </script>
+}

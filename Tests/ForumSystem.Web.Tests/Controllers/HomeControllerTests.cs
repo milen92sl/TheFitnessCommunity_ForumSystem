@@ -1,17 +1,17 @@
-﻿namespace ForumSystem.Web.Tests
+﻿namespace ForumSystem.Web.Controllers
 {
-    using System.Net;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Mvc.Testing;
-
     using Xunit;
 
-    public class WebTests : IClassFixture<WebApplicationFactory<Startup>>
+    using HttpStatusCode = System.Net.HttpStatusCode;
+
+    public class HomeControllerTests : IClassFixture<WebApplicationFactory<Startup>>
     {
         private readonly WebApplicationFactory<Startup> server;
 
-        public WebTests(WebApplicationFactory<Startup> server)
+        public HomeControllerTests(WebApplicationFactory<Startup> server)
         {
             this.server = server;
         }
