@@ -18,7 +18,7 @@ There are many functionalities, such as:
 <img src="https://www.issaonline.com/blog/img/posts/627/issa-building-fitness-community.jpg" width="1000">
 
 ## Possibility to Create articles:
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQaS_7FYFeEz5HGLcZNne1BPkZJhkhz7L-UQ&usqp=CAU" width="200">
+<img src="https://thumbs.dreamstime.com/b/hand-marker-writing-fitness-word-cloud-fitness-sport-h-health-concept-68173050.jpg" width="200">
 
 ## Recursive comments:
 <img src="https://i.stack.imgur.com/uf99G.jpg" width="600">
