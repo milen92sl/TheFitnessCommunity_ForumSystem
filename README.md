@@ -8,6 +8,8 @@ There are many functionalities, such as:
 * Add an image in article
 * Search engine
 * Pageing
+* Identity roles
+* Unit tests
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
