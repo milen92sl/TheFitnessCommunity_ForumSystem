@@ -10,9 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\**" />
     <Compile Remove="Routing\**" />
+    <Content Remove="Controllers\**" />
     <Content Remove="Routing\**" />
+    <EmbeddedResource Remove="Controllers\**" />
     <EmbeddedResource Remove="Routing\**" />
+    <None Remove="Controllers\**" />
     <None Remove="Routing\**" />
   </ItemGroup>
   <ItemGroup>
@@ -38,10 +42,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Web\ForumSystem.Web\ForumSystem.Web.csproj" />
     <ProjectReference Include="..\ForumSystem.Services.Data.Tests\ForumSystem.Services.Data.Tests.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

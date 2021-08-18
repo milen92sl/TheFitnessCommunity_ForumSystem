@@ -4,6 +4,7 @@
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
+
     using CloudinaryDotNet;
     using CloudinaryDotNet.Actions;
     using ForumSystem.Data.Common.Repositories;
@@ -49,7 +50,7 @@
             foreach (var image in imagesToDelete)
             {
                 this.imagesRepository.Delete(image);
-                this.imagesRepository.SaveChangesAsync();
+                await this.imagesRepository.SaveChangesAsync();
             }
 
             this.postsRepository.HardDelete(post);
@@ -138,7 +139,7 @@
 
         public async Task<IEnumerable<string>> UploadAsync(Cloudinary cloudinary, ICollection<IFormFile> files)
         {
-            List<string> imagesUrl = new List<string>();
+            List<string> imagesUrl = new ();
 
             foreach (var file in files)
             {
@@ -151,21 +152,19 @@
                     destinationImage = image.ToArray();
                 }
 
-                using (var destinationStrem = new MemoryStream(destinationImage))
+                using var destinationStrem = new MemoryStream(destinationImage);
+                var uploadParams = new ImageUploadParams()
                 {
-                    var uploadParams = new ImageUploadParams()
-                    {
-                        File = new FileDescription(file.FileName, destinationStrem),
-                    };
+                    File = new FileDescription(file.FileName, destinationStrem),
+                };
 
-                    var result = await cloudinary.UploadAsync(uploadParams);
+                var result = await cloudinary.UploadAsync(uploadParams);
 
-                    if (result.Error == null)
-                    {
-                        var imgUrl = result.Uri.AbsoluteUri;
+                if (result.Error == null)
+                {
+                    var imgUrl = result.Uri.AbsoluteUri;
 
-                        imagesUrl.Add(imgUrl);
-                    }
+                    imagesUrl.Add(imgUrl);
                 }
             }
 

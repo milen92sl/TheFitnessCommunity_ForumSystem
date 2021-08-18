@@ -1,4 +1,4 @@
-namespace ForumSystem.Services.Tests
+﻿namespace ForumSystem.Services.Tests
 {
     using System;
     using System.Threading.Tasks;

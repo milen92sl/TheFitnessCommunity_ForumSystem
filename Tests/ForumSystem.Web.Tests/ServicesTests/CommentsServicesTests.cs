@@ -28,7 +28,7 @@
                 UserId = "Milen92sl",
             };
 
-            var commentList = new List<Comment>();
+            List<Comment> commentList = new ();
             commentList.Add(comment);
 
             var postId = Guid.NewGuid().ToString();
@@ -90,9 +90,7 @@
             await dbContext.Posts.AddAsync(post);
             await dbContext.Comments.AddAsync(comment);
 
-
             await dbContext.SaveChangesAsync();
-
 
             var result = commentsService.All().Count(x => x.PostId == comment.PostId);
 

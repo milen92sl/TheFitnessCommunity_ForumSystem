@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForumSystem.Services.Data
+﻿namespace ForumSystem.Services.Data
 {
+    using System.Threading.Tasks;
+
     public interface ICommentsService
     {
         Task Create(int postId, string userId, string content, int? parentId = null);

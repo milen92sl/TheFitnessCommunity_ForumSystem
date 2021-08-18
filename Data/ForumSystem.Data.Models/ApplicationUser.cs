@@ -36,6 +36,5 @@ namespace ForumSystem.Data.Models
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
 
         public virtual ICollection<Post> Posts { get; set; }
-
     }
 }
