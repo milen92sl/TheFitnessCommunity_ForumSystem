@@ -1,6 +1,6 @@
 # The Fitness Community - Forum System
 
-Sport Forum is a platform for adding articles by different people for many sports.
+The Fitness Community Forum-System is a platform for adding articles by different people for many sports.
 There are many functionalities, such as:
 * CRUD operations for working with articles.
 * Recursive comments
