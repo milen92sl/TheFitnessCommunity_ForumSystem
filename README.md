@@ -17,7 +17,7 @@ There are many functionalities, such as:
 # Image Layouts:
 
 ## Home page:
-<img src="https://www.issaonline.com/blog/img/posts/627/issa-building-fitness-community.jpg" width="1000">
+<img src="https://images.ctfassets.net/qw8ps43tg2ux/7b1459wSBDYcyHnf3S6YlJ/f50a97db40fd1d43576e1b4ed61172d5/issa-building-fitness-community.jpg" width="1000">
 
 ## Possibility to Create articles:
 <img src="https://thumbs.dreamstime.com/b/hand-marker-writing-fitness-word-cloud-fitness-sport-h-health-concept-68173050.jpg" width="200">
